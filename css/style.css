@@ -1,7 +1,47 @@
+:root {
+    --color-pri: #678e3e;
+    --color-pri-light: #beed8c;
+    --color-grey-1: #102a42;
+    --color-grey-5: #617d98;
+    --color-grey-10: #f1f5f8;
+    --color-white: #fff;
+    --ff-first: 'Catamaran', sans-serif;
+    --ff-sec: 'Grand Hotel', cursive;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+}
+
 header {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('../images/main-bcg.jpeg') center/cover no-repeat fixed;
     position: relative;
     overflow-x: hidden;
+}
+
+.banner {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h2 {
+    font-family: var(--ff-sec);
+    color: var(--color-pri);
+}
+
+.banner h1 {
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin: 1.25rem 0 2rem 0;
+}
+
+.banner-btn {
+    outline: 0.125rem solid var(--color-pri);
+    outline-offset: 0.25rem;
+    font-size: 1.25rem;
+    padding: 1rem 1.7rem;
 }
